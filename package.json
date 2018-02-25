@@ -5,9 +5,9 @@
   "main": "server.js",
   "scripts": {
     "run:server": "nodemon --inspect ./public/dist/server/bundle.js ",
-    "dev:client": "webpack --config ./webpack.client.config.js --watch",
-    "dev:client-admin": "webpack --config ./webpack.client.admin.config.js --watch",
-    "dev:server": " webpack --config ./webpack.server.config.js --watch  ",
+    "dev:client": "webpack --config ./configs/webpack.client.config.js --watch",
+    "dev:client-admin": "webpack --config ./configs/webpack.client.admin.config.js --watch",
+    "dev:server": " webpack --config ./configs/webpack.server.config.js --watch  ",
     "dev": "npm-run-all dev:client dev:server  --parallel "
   },
   "keywords": [],
