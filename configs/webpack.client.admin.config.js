@@ -6,9 +6,9 @@ var opts = {
 }
 
 module.exports = {
-    entry: path.resolve(__dirname, "src", "client-entry.js"),
+    entry: path.resolve(__dirname, "..", "src", "client-entry.js"),
     output: {
-        path: path.resolve(__dirname, "public", "dist", "client"),
+        path: path.resolve(__dirname, "..", "public", "dist", "client"),
         filename: "bundle-admin.js",
         publicPath: "/dist"
     },

@@ -2,9 +2,9 @@ var path = require("path")
 var nodeExternals = require("webpack-node-externals");
 
 module.exports = {
-    entry: path.resolve(__dirname, "server.js"),
+    entry: path.resolve(__dirname, "..", "src", "server.js"),
     output: {
-        path: path.resolve(__dirname, "public", "dist", "server"),        
+        path: path.resolve(__dirname, "..", "public", "dist", "server"),        
         publicPath: "/dist/server",
         filename:"bundle.js"
     },

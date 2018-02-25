@@ -217,6 +217,11 @@ var ModulesService = function ModulesService() {
         Menuid: 1,
         ModuleTypeId: 2,
         Settings: { src: "https://www.wien.info/media/images/altstadt-panorama-mit-stephansdom-und-karlskirche-19to1.jpeg" }
+    }, {
+        id: 4,
+        Menuid: 3,
+        ModuleTypeId: 3,
+        Settings: { heading: "Jobs", headingType: 1 }
     }];
 };
 ModulesService.prototype.GetModules = function (menuid) {
@@ -245,7 +250,7 @@ app.get("*", function (req, res) {
         var initialState = {
             modules: found,
             cms: {
-                adminEdit: true
+                adminEdit: false
             },
             menus: allMenus
         };
