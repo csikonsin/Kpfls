@@ -18298,10 +18298,6 @@ var _Image = __webpack_require__(29);
 
 var _Image2 = _interopRequireDefault(_Image);
 
-var _AdminToggle = __webpack_require__(30);
-
-var _AdminToggle2 = _interopRequireDefault(_AdminToggle);
-
 var _Heading = __webpack_require__(31);
 
 var _Heading2 = _interopRequireDefault(_Heading);
@@ -18310,6 +18306,10 @@ var _Menu = __webpack_require__(32);
 
 var _Menu2 = _interopRequireDefault(_Menu);
 
+var _AdminToggle = __webpack_require__(30);
+
+var _AdminToggle2 = _interopRequireDefault(_AdminToggle);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -18317,6 +18317,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+/////////////
+
+
+//////////
+
 
 var App = function (_React$Component) {
     _inherits(App, _React$Component);
@@ -18349,9 +18354,11 @@ var App = function (_React$Component) {
                 if (el != null) children.push(el);
             }
 
+            /////////////////////
             if (this.props.store.cms.adminEdit) {
                 children.push(_react2.default.createElement(_AdminToggle2.default, { key: -1, cms: this.props.store.cms }));
             }
+            //////////////////
 
             return _react2.default.createElement(
                 "div",

@@ -1,9 +1,12 @@
 import React from "react"
 import Content from "./Content.jsx"
 import Image from "./Image.jsx"
-import AdminToggle from "./AdminToggle.jsx"
 import Heading from "./Heading.jsx"
 import Menu from "./Menu.jsx"
+/// #if ADMIN
+import AdminToggle from "./AdminToggle.jsx"
+/// #endif
+
 
 class App extends React.Component {
     constructor(props){
@@ -28,9 +31,11 @@ class App extends React.Component {
             if(el!=null)children.push(el)
         }
 
+        /// #if ADMIN
         if(this.props.store.cms.adminEdit){
             children.push(<AdminToggle key={-1} cms={this.props.store.cms}  />)
         }
+        /// #endif
 
         return (
             <div>
